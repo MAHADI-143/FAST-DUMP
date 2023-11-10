@@ -1,9 +1,0 @@
-import subprocess
-
-def enable_storage_access():
-    try:
-        subprocess.run(["\x1b[38;5;196mtermux-setup-storage"], check=True)
-        print("Storage access enabled successfully.")
-    except subprocess.CalledProcessError as e:
-        print(f"Error: {e}")
-enable_storage_access()
